@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Jurusan TKJ</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff5fa;
+            color: #29202a;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #171017;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h2 {
+            color: #ff80bd;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ff80bd;
+        }
+
+        .hero {
+            min-height: 390px;
+            padding: 75px 8%;
+            text-align: center;
+            background: linear-gradient(135deg, #ffd1e7, #fff5fa);
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #a51d63;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .tombol {
+            display: inline-block;
+            background: #d63384;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 28px;
+            color: #b42370;
+            margin-bottom: 25px;
+        }
+
+        .tentang {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .kartu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .kartu {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #eac5d9;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .kartu:hover {
+            transform: translateY(-5px);
+        }
+
+        .ikon {
+            font-size: 42px;
+        }
+
+        .kartu h3 {
+            color: #b42370;
+            margin: 10px 0;
+        }
+
+        #materi {
+            background: #ffe5f1;
+        }
+
+        .daftar {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 25px 40px;
+            border-radius: 15px;
+        }
+
+        .daftar li {
+            margin: 10px 0;
+        }
+
+        .kontak {
+            text-align: center;
+        }
+
+        footer {
+            background: #171017;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        footer span {
+            color: #ff80bd;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU WEBSITE -->
+    <header>
+        <h2>💻 TKJ WEBSITE</h2>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#materi">Materi</a>
+            <a href="#karier">Karier</a>
+        </nav>
+    </header>
+
+    <!-- HALAMAN BERANDA -->
+    <section class="hero" id="beranda">
+        <h1>Selamat Datang di Jurusan TKJ</h1>
+
+        <p>
+            Teknik Komputer dan Jaringan adalah jurusan yang mempelajari
+            komputer, jaringan internet, perangkat keras, perangkat lunak,
+            serta teknologi informasi.
+        </p>
+
+        <a href="#tentang" class="tombol">Pelajari Lebih Lanjut</a>
+    </section>
+
+    <!-- TENTANG TKJ -->
+    <section id="tentang">
+        <h2 class="judul">Tentang Jurusan TKJ</h2>
+
+        <div class="tentang">
+            <p>
+                Jurusan Teknik Komputer dan Jaringan (TKJ) merupakan salah
+                satu jurusan di SMK yang mempelajari cara merakit komputer,
+                menginstal sistem operasi, mengatur jaringan komputer,
+                mengelola server, dan memperbaiki masalah pada komputer
+                maupun jaringan.
+            </p>
+
+            <p>
+                Siswa TKJ dibekali pengetahuan teori dan praktik agar siap
+                menghadapi perkembangan teknologi di dunia kerja.
+            </p>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian">
+        <h2 class="judul">Apa yang Dipelajari di TKJ?</h2>
+
+        <div class="kartu-container">
+
+            <div class="kartu">
+                <div class="ikon">🖥️</div>
+                <h3>Hardware</h3>
+                <p>Mengenal komponen komputer, merakit PC, dan melakukan perawatan perangkat keras.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">🌐</div>
+                <h3>Jaringan Komputer</h3>
+                <p>Mempelajari IP address, LAN, WAN, topologi jaringan, dan konfigurasi router.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">⚙️</div>
+                <h3>Sistem Operasi</h3>
+                <p>Mempelajari instalasi dan konfigurasi Windows, Linux, serta Debian.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon">🖱️</div>
+                <h3>Pemrograman Web</h3>
+                <p>Membuat website menggunakan HTML, CSS, dan JavaScript dasar.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MATERI -->
+    <section id="materi">
+        <h2 class="judul">Materi Dasar TKJ</h2>
+
+        <div class="daftar">
+            <ol>
+                <li>Pengenalan perangkat keras dan perangkat lunak.</li>
+                <li>Perakitan dan perawatan komputer.</li>
+                <li>Dasar-dasar jaringan komputer.</li>
+                <li>IP address dan subnetting.</li>
+                <li>Instalasi sistem operasi.</li>
+                <li>Konfigurasi router dan switch.</li>
+                <li>Instalasi dan konfigurasi server.</li>
+                <li>Pembuatan website menggunakan HTML dan CSS.</li>
+                <li>Keamanan jaringan komputer.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- PELUANG KERJA -->
+    <section id="karier">
+        <h2 class="judul">Peluang Kerja Lulusan TKJ</h2>
+
+        <div class="kartu-container">
+
+            <div class="kartu">
+                <div class="ikon"></div>
+                <h3>Teknisi Komputer</h3>
+                <p>Merawat, memperbaiki, dan melakukan perakitan komputer.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon"></div>
+                <h3>Network Technician</h3>
+                <p>Memasang, mengatur, dan memelihara jaringan komputer.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon"></div>
+                <h3>Administrator Server</h3>
+                <p>Mengelola server dan memastikan layanan jaringan berjalan dengan baik.</p>
+            </div>
+
+            <div class="kartu">
+                <div class="ikon"></div>
+                <h3>Web Developer Pemula</h3>
+                <p>Membuat dan mengembangkan website sesuai kebutuhan pengguna.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PENUTUP -->
+    <section class="kontak">
+        <h2 class="judul">Semangat Belajar TKJ!</h2>
+
+        <p>
+            "Jangan takut mencoba, jangan berhenti belajar.
+            Kuasai teknologi hari ini untuk membangun masa depan."
+        </p>
+
+        <br>
+
+        <a href="#beranda" class="tombol">Kembali ke Atas ↑</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 <span>Website Jurusan TKJ</span></p>
+        <p>Belajar Teknologi, Membangun Masa Depan </p>
+    </footer>
+
+</body>
+</html>
